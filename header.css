@@ -1,0 +1,111 @@
+.header {
+  height: 70px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap:10px;
+  flex-shrink:0;
+}
+
+.carshare-logo {
+  height: 20px;
+
+}
+
+ .car-share-logo{
+    font-weight: bold;
+    font-size: 30px;
+    background: linear-gradient(to right, rgba(11, 11, 211, 0.999) 30%, rgb(38, 108, 131) 50%);
+
+    background-clip: text;          /* Standard property */
+    -webkit-background-clip: text; /* Chrome, Safari */
+
+    -webkit-text-fill-color: transparent;
+}
+
+.middle-section {
+ flex: 1;
+  display: flex;
+  align-items: center
+}
+
+.right-section {
+  
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  gap:30px;
+}
+
+.right-section-link {
+  transition:0.3s;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.right-section-link:hover{
+   transform:translateY(-2px);
+}
+
+
+
+
+.home-bar {
+  height: 24px;
+}
+
+.fleet-bar{
+  height: 24px;
+}
+.pricing-bar{
+  height: 24px;
+  width: 24px;
+}
+.contact-bar{
+   height: 24px;
+  width: 24px;
+}
+
+
+
+
+@media (max-width:768px){
+
+  .header{
+    flex-wrap:wrap;
+    height:auto;
+    padding:10px;
+  }
+
+  .right-section{
+    width:100%;
+    justify-content:center;
+    margin-top:10px;
+    gap:15px;
+  }
+}
+
